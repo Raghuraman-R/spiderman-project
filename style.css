@@ -1,0 +1,141 @@
+/* 🔤 FONT */
+@font-face {
+  font-family: "spiderman";
+  src: url("spiderman.ttf");
+}
+
+/* 🌑 BODY */
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+}
+
+/* 📦 CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+/* 🕷️ TITLE */
+h1 {
+  font-size: 32px;
+  letter-spacing: 3px;
+}
+
+/* 📦 INPUT */
+.input-box {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  width: 200px;
+  max-width: 80%;
+}
+
+button {
+  padding: 10px 20px;
+  background: #e62429;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #b91c1c;
+}
+
+/* 📤 OUTPUT */
+#output {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 🕷️ TEXT */
+#nameText {
+  font-size: 10vw;
+  font-family: "spiderman";
+  letter-spacing: 5px;
+  text-align: center;
+
+  background-image: url("spider.jpg");
+  background-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.4s ease;
+}
+
+#nameText.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ⬇️ DOWNLOAD BUTTON */
+#downloadBtn {
+  margin-top: 20px;
+}
+
+/* 🔗 GITHUB LINK */
+.github {
+  margin-top: 40px;
+}
+
+.github a {
+  color: rgb(139, 0, 0);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 26px;
+  text-decoration: none;
+}
+
+.github a:hover {
+  text-decoration: underline;
+}
+
+/* 📱 MOBILE FIX */
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #nameText {
+    font-size: 14vw;
+    letter-spacing: 2px;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  button {
+    width: 80%;
+  }
+
+}
