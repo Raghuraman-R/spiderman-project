@@ -1,9 +1,8 @@
 /* 🔤 FONT */
 @font-face {
   font-family: "spiderman";
-  src: url("spiderman.ttf");
+  src: url("Spiderman.ttf");
 }
-
 /* 🌑 BODY */
 body {
   margin: 0;
